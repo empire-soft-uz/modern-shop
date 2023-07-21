@@ -1,0 +1,256 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    width: 82%;
+    margin: 5px auto;
+    height: 100%;
+    gap: 20px;
+}
+
+.box {
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    /* margin: 15px 0; */
+    justify-self: center;
+}
+
+.listImgBox {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.listImgBox img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.listImgBox img:hover {
+    transform: scale(1.1);
+}
+
+.listAbout {
+    padding: 15px;
+}
+
+.listAbout .price {
+    margin-bottom: 5px;
+}
+
+.listAbout .cost {
+    color: #6B7280;
+    font-size: 14px;
+    font-family: "OpenSans-Light";
+
+}
+
+.listAbout .name {
+    font-family: "OpenSans-Light";
+    height: 50px;
+}
+
+.listAbout button {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+@media (min-width: 120px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 0;
+        height: 100%;
+        width: 94%;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .listAbout {
+        padding: 10px;
+    }
+
+    .listImgBox {
+        height: 150px;
+    }
+
+    .listAbout .price {
+        font-size: 12px;
+    }
+
+    .listAbout .cost {
+        font-size: 10px;
+
+    }
+
+    .listAbout .name {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .listAbout button {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 0;
+        height: 100%;
+        width: 94%;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .listAbout {
+        padding: 10px;
+    }
+
+    .listImgBox {
+        height: 150px;
+    }
+
+    .listAbout .price {
+        font-size: 13px;
+    }
+
+    .listAbout .cost {
+        font-size: 10px;
+
+    }
+
+    .listAbout .name {
+        font-size: 13px;
+        height: 40px;
+    }
+
+    .listAbout button {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 100%;
+        width: 90%;
+    }
+
+    .listAbout {
+        padding: 10px;
+    }
+
+    .listImgBox {
+        height: 180px;
+    }
+
+    .listAbout .price {
+        font-size: 12px;
+    }
+
+    .listAbout .cost {
+        font-size: 10px;
+
+    }
+
+    .listAbout .name {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .listAbout button {
+        font-size: 10px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        height: 100%;
+        width: 90%;
+    }
+
+    .listAbout {
+        padding: 10px;
+    }
+
+    .listImgBox {
+        height: 150px;
+    }
+
+    .listAbout .price {
+        font-size: 12px;
+    }
+
+    .listAbout .cost {
+        font-size: 10px;
+
+    }
+
+    .listAbout .name {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .listAbout button {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        height: 100%;
+        width: 82%;
+    }
+
+    .listAbout {
+        padding: 10px;
+    }
+
+    .listImgBox {
+        height: 220px;
+    }
+
+    .listAbout .price {
+        font-size: 15px;
+    }
+
+    .listAbout .cost {
+        font-size: 13px;
+
+    }
+
+    .listAbout .name {
+        font-size: 14px;
+        height: 50px;
+    }
+
+    .listAbout button {
+        font-size: 15px;
+    }
+}
